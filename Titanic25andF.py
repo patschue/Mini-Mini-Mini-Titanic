@@ -23,3 +23,6 @@ grouped_Titanic25 = Titanic25.groupby(["Sex", "Survived"]).size().unstack(fill_v
 
 TitanicFemale = Titanic.loc[Titanic['Sex'] == "female"]
 grouped_TitanicFemale = TitanicFemale.groupby(["Survived", "Pclass"]).size().unstack(fill_value=0)
+
+# TitanicFemale = Titanic.loc[Titanic['Sex'] == "female"]
+grouped_TitanicFM = Titanic.groupby(["Survived", "Pclass", "Sex"]).size().unstack(fill_value=0)
