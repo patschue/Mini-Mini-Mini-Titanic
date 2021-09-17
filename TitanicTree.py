@@ -5,7 +5,7 @@ Created on Thu Sep 16 13:30:36 2021
 
 @author: Patrick
 """
-import seaborn as sns
+# import seaborn as sns
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
@@ -13,7 +13,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn import tree
 import matplotlib.pyplot as plt
-import graphviz
+# import graphviz
 
 # Laden der Daten
 Titanic = pd.read_csv("minichallenge_titanic.csv")
@@ -48,6 +48,8 @@ clf.score(X_test, y_test)
 plt.figure(figsize=(40,20))
 tree.plot_tree(clf, feature_names = ['ChildAdult', 'Pclass', 'Sex'], fontsize=23)
 plt.show()
+
+
 
 
 
